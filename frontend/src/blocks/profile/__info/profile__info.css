@@ -1,0 +1,25 @@
+.profile__info {
+  width: 336px;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0 25px 30px;
+  position: relative;
+  flex-wrap: wrap;
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .profile__info {
+    width: 282px;
+    align-items: center;
+    padding: 26px 0 36px;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+
+}
+
+

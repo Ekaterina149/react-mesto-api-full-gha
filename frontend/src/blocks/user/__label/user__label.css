@@ -1,0 +1,11 @@
+.user__label {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+
+.user__label:last-child {
+  margin-bottom: 0px;
+}

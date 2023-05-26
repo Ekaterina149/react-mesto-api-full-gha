@@ -1,0 +1,17 @@
+.user__container {
+  width: 430px;
+  background-color: transparent;
+
+  box-sizing: border-box;
+  padding: 60px 0px 37px;
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+}
+
+@media screen and (max-width: 500px) {
+  .user__container {
+    width: 282px;
+    padding: 25px 22px 25px;
+  }
+}

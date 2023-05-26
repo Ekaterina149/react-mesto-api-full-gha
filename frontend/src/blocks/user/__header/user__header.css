@@ -1,0 +1,17 @@
+.user__header {
+  font-family: "Inter", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+  .user__header {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,12 @@
+.popup__submit_valid {
+  background-color: #000000;
+  color: white;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.popup__submit_valid:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
