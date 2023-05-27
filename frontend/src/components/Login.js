@@ -31,12 +31,12 @@ function Login({ onAuthorize }) {
                 name="email"
                 placeholder="email"
                 minLength="2"
-                value={values.email || ""}
+                value={values.email}
                 onChange={handleChange}
                 required
               />
               <span className="placeInput-error popup__input-error">
-                {errors.email || ""}
+                {errors.email}
               </span>
             </label>
             <label className="user__label">
@@ -49,10 +49,10 @@ function Login({ onAuthorize }) {
                 onChange={handleChange}
                 minLength="2"
                 required
-                value={values.password || ""}
+                value={values.password}
               />
               <span className="linkInput-error popup__input-error">
-                {errors.password || ""}
+                {errors.password}
               </span>
             </label>
           </fieldset>

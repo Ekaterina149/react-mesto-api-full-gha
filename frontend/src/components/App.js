@@ -231,9 +231,7 @@ function App() {
   function handleLogOut() {
     apiAuth.unauthorize()
     .then(() => {
-      // debugger;
       setLoggedIn(false);
-      console.log(isLoading);
       localStorage.removeItem("userId");
       setUserEmail(null);
       navigate("/signin");

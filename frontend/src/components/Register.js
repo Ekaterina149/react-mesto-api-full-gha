@@ -32,12 +32,12 @@ function Register({ linkBottomPage, onRegister, route }) {
                 name="email"
                 placeholder="email"
                 minLength="2"
-                value={values.email || ""}
+                value={values.email}
                 onChange={handleChange}
                 required
               />
               <span className="placeInput-error user__input-error">
-                {errors.email || ""}
+                {errors.email}
               </span>
             </label>
             <label className="user__label">
@@ -48,12 +48,12 @@ function Register({ linkBottomPage, onRegister, route }) {
                 name="password"
                 minLength="8"
                 placeholder="Пароль"
-                value={values.password || ""}
+                value={values.password}
                 onChange={handleChange}
                 required
               />
               <span className="linkInput-error user__input-error">
-                {errors.password || ""}
+                {errors.password}
               </span>
             </label>
           </fieldset>
