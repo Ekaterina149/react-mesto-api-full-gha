@@ -24,7 +24,7 @@ mongoose.connect('mongodb://127.0.0.1/mestodb', {
   useNewUrlParser: true,
 });
 app.use(requestLogger);
-app.use(cors({ origin: ['http://localhost:3001'], credentials: true }));
+app.use(cors({ origin: ['http://localhost:3001', 'http://knifflighexe.nomoredomains.rocks'], credentials: true }));
 app.post('/signin', loginUserJoi, login);
 app.post('/signup', createUserJoi, createUser);
 app.use(authMiddleware);
