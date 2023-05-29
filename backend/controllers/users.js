@@ -118,9 +118,8 @@ module.exports.login = (req, res, next) => {
 
             maxAge: 7 * 24 * 60 * 60 * 1000, // 7 дней в миллисекундах
             httpOnly: true,
-            sameSite: false,
-            secure: true,
-            domain: 'localhost',
+
+
 
           });
 
