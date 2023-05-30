@@ -7,7 +7,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 84.252.130.230
+IP 84.252.130.230
 
 Frontend https://knifflighexe.nomoredomains.rocks/
 
