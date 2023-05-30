@@ -9,7 +9,7 @@ const {
   HTTP_STATUS_OK,
 } = httpConstants;
 module.exports.getCards = (req, res, next) => {
-  Card.find({}).sort({createdAt: -1})
+  Card.find({}).sort({ createdAt: -1 })
     .then((cards) => res.status(HTTP_STATUS_OK).send(cards))
     .catch((err) => next(err));
 };

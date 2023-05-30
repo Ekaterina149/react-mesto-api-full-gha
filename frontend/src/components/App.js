@@ -61,17 +61,17 @@ function App() {
         });
     }
   }, [isLoggedIn]);
-  // Если пользователь зарегестрирован (токен есть в localStorage ),
+  // Если пользователь зарегестрирован (его id есть в localStorage ),
   // то переходим сразу на страницу с карточками
   useEffect(() => {
     if (localStorage.getItem("userId")) {
       const jwt = localStorage.getItem("userId");
       if (jwt) {
-        // проверим токен
+        // если id пользователя есть в локальном хранилище, 
+        // отправим GET запрос на получение данных о текущем пользователе
         apiAuth
           .checkToken(jwt)
           .then((res) => {
-            console.log('Hello', res);
             if (res) {
               // авторизуем пользователя
               setLoggedIn(true);
