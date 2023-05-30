@@ -160,6 +160,7 @@ function App() {
       .finally(() => setLoading(false));
   }
   // Функция обновления аватара пользователя
+  //
   function handleUpdateAvatar(link) {
     setLoading(true);
     setApi
